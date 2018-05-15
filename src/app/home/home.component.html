@@ -1,0 +1,26 @@
+<p>
+  Welcome to Home page!
+</p>
+<p>My location : {{obj.location}}</p>
+<ul>
+  <li *ngFor="let arr of myArray">{{ arr }}
+  </li>
+</ul>
+
+<ul>
+  <li *ngIf="myArray">I am created
+  </li>
+</ul>
+
+<ul>
+  <li *ngIf="!myArray">I am created
+  </li>
+</ul>
+
+<img src="{{angularLogo}}">
+<img [src]="angularLogo">
+<img bind-src ="angularLogo">
+
+<button [disabled]="status">Disable</button>
+<button (click)="myEvent($event)">Event Binding</button>
+<button (mouseenter)="myEvent($event)">Event Binding</button>
